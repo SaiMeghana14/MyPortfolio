@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Meghana | ECE Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">Sai Meghana</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section fade-in">
+        <div class="profile-container">
+            <img src="images/profile.jpg" alt="Profile" class="profile-img">
+            <div class="profile-info">
+                <h1>K.N.V Sai Meghana</h1>
+                <h2>ECE Student | Iot and AI Developer</h2>
+                <p>
+                    Passionate Electronics and Communication Engineering student with interests in Iot, programming, technology innovation, with effective communication, and collaborative team 
+participation. Always eager to learn and build impactful solutions.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/naga-venkata-sai-meghana-kovvada-131b51259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/saimeghana" target="_blank" title="GitHub">
+                        <img src="images/github.png" alt="GitHub">
+                    </a>
+                    <a href="mailto:knvsaimeghana.gmail@.com" title="Email">
+                        <img src="images/email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section fade-in">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Python,C,Java,SQL</li>
+            <li>HTML,CSS,VLSI Design & Verilog</li>
+            <li>VS code,Github,Git</li>
+            <li>Arduino IDE,Tinkercad,Xilinx</li>
+            <li>IoT,Bluetooth</li>
+            <li></li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section fade-in">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Renewable Energy Awareness Chatbot </h3>
+                <p>An interactive, AI-powered chatbot built using Streamlit to promote awareness about renewable energy sources — such as solar, wind, hydro, geothermal, and biomass.  
+                   Tools: Python, Dialogflow, VS code, GitHub, Streamlit </p>
+                <a href="https://saimeghana14.github.io/Renewable-energy-chatbot/" target="_blank" class="btn">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>AyushCare – Rural Health Monitoring with IoT.</h3>
+                <p>Rural Health Monitoring using IoT that enables real-time tracking of vital signs and transmits data to doctors via the cloud.
+                  Tools: Embedded C, Python, ESP32, Arduino IDE.</p>
+                <a href="https://saimeghana14.github.io/AyushCare-IoT-Health/" target="_blank" class="btn">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Incredible India – Cultural Explorer</h3>
+                <p>A Streamlit web app that showcases India's rich cultural heritage – festivals, food, monuments, and more – powered by Snowflake as the backend and hosted on Streamlit Cloud.</p>
+                   Tools: Python, CSS,GitHub, Streamlit, Snowflake
+              <a href="https://saimeghana14.github.io/incredible-india/" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="section fade-in">
+        <h2>Certificates</h2>
+        <div class="certificates-container">
+            <div class="certificate-card">
+                <img src="images/certificate1.jpg" alt="Certificate 1">
+                <p>VLSI and FPGA Implementation</p>
+            </div>
+            <div class="certificate-card">
+                <img src="images/certificate2.png" alt="Certificate 2">
+                <p>Coursera: Cisco Networking</p>
+            </div>
+            <div class="certificate-card">
+                <img src="images/certificate3.png" alt="Certificate 3">
+                <p>Udemy: Ethical Hacking</p>
+            </div>
+            <div class="certificate-card">
+                <img src="images/certificate4.png" alt="Certificate 4">
+                <p>Udemy: Python Foundational Certification</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section fade-in">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:knvsaimeghana@gmail.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/naga-%20venkata-sai-meghana-kovvada-%20131b51259?%20utm_source=share&utm_campaign=sha%20re_via&utm_content=profile&utm_medi%20um=android_app" target="_blank">LinkedIn</a></p>
+        <p>GitHub: <a href="https://github.com/saimeghana" target="_blank">Github</a></p>
+    </section>
+
+    <section id="resume" class="section fade-in resume-section">
+        <h2>Resume</h2>
+        <button class="btn" onclick="window.open('Sai_Meghana_Resume.pdf', '_blank')">View Resume (PDF)</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sai Meghana</p>
+    </footer>
+
+    <script>
+        // Fade-in animation on scroll
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = { threshold: 0.2 };
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('appear');
+                appearOnScroll.unobserve(entry.target);
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => appearOnScroll.observe(fader));
+    </script>
+</body>
+</html>
